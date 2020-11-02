@@ -1,7 +1,7 @@
 :root {
-  --primary: #9CD2DA;
+  --primary: #012169;
   --black: #1b2324;
-  --white: #f6f6f6;
+  --white: #ffffff;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
   font-weight: 300;
   font-style: normal;
   font-size: 10px;
-  color: var(--white);
+  color: var(--primary);
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
@@ -26,16 +26,10 @@ html {
 }
 
 body {
-  background-color: var(--black);
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(27, 35, 36, 0) 15%,
-    rgba(27, 35, 36, 0) 50%,
-    rgba(14, 18, 18, 0) 85%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
+  background-color: var(--white);
+  background-image: url(/assets/images/bg.png);
   height: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   font-size: 30px;
   margin: 0;
@@ -51,7 +45,7 @@ h6 {
 }
 
 p {
-  color: var(--white);
+  color: var(--primary);
   font-family: commuters-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -61,16 +55,15 @@ p {
 
 h2 {
   color: var(--primary);
-  font-family: utopia-std-caption, serif;
+  font-family: attribute-mono, sans-serif;
   font-weight: 700;
-  font-style: italic;
   font-size: 3em;
   line-height: 1.5;
 }
 
 h3 {
-  color: rgba(255, 255, 255, 0.35);
-  font-family: commuters-sans, sans-serif;
+  color: var(--primary);
+  font-family: attribute-mono, sans-serif;
   text-transform: uppercase;
   font-size: 0.45em;
   line-height: 2.5;
@@ -79,7 +72,7 @@ h3 {
 
 h4 {
   color: var(--primary);
-  font-family: utopia-std-caption, serif;
+  font-family: attribute-mono, sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 1.7em;
@@ -101,15 +94,7 @@ a:hover {
   cursor: alias;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  background-image: url('./images/pattern1.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  /* background-size: 50%; */
-}
+
 
 /* logo header section */
 .header {
