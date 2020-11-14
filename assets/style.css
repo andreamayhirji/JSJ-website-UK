@@ -49,7 +49,7 @@ p {
   font-family: commuters-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.6em;
+  font-size: 0.5em;
   line-height: 1.7;
 }
 
@@ -57,7 +57,7 @@ h2 {
   color: var(--primary);
   font-family: attribute-mono, sans-serif;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5;
 }
 
@@ -97,23 +97,27 @@ a:hover {
 
 
 /* logo header section */
-.header {
-  margin-top: 200px;
-  padding-left: 150px;
+#header {
+  margin-top: 120px;
+  text-align: center;
+  margin-bottom: 500px;
 }
 
 .logo {
-  width: 800px;
+  width: 900px;
+
 }
 
 /* content section 1 */
-.section-1 {
+#section-1 {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  padding-left: 700px;
+  padding-right: 150px;
 }
 
-.section-1-title {
+/* .section-1-title {
   margin-top: 200px;
   padding-left: 150px;
   width: 70%;
@@ -122,7 +126,7 @@ a:hover {
 .section-1-content {
   padding-left: 500px;
   padding-right: 150px;
-}
+} */
 
 /* infograph content section 2 */
 .section-2 {
