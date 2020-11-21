@@ -31,7 +31,6 @@ body {
   height: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
-  font-size: 30px;
   margin: 0;
 }
 
@@ -44,12 +43,23 @@ h6 {
   margin: 0 0 5px 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  background: url('./images/bg-bottom.png') bottom right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 p {
   color: var(--primary);
   font-family: commuters-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.5em;
+  font-size: 1.5rem;
   line-height: 1.7;
 }
 
@@ -57,7 +67,7 @@ h2 {
   color: var(--primary);
   font-family: attribute-mono, sans-serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 5rem;
   line-height: 1.5;
 }
 
@@ -71,12 +81,11 @@ h3 {
 }
 
 h4 {
-  color: var(--primary);
+  color: var(--white);
   font-family: attribute-mono, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 1.7em;
-  line-height: 1.5;
+  font-weight: 100;
+  font-size: 3.5em;
+  line-height: .5;
 }
 
 a {
@@ -94,17 +103,29 @@ a:hover {
   cursor: alias;
 }
 
+.blue-box {
+margin: 100px 0;
+width: 200px;
+height: 20px;
+background-color: var(--primary);
+}
+
+.right {
+  margin-left: auto;
+}
+.left {
+  margin-right: auto;
+}
 
 
 /* logo header section */
 #header {
-  margin-top: 120px;
   text-align: center;
-  margin-bottom: 500px;
+  padding: 100px 0 400px 0;
 }
 
 .logo {
-  width: 900px;
+  width: 700px;
 
 }
 
@@ -117,27 +138,15 @@ a:hover {
   padding-right: 150px;
 }
 
-/* .section-1-title {
-  margin-top: 200px;
-  padding-left: 150px;
-  width: 70%;
-}
-
-.section-1-content {
-  padding-left: 500px;
-  padding-right: 150px;
-} */
 
 /* infograph content section 2 */
-.section-2 {
-  background: linear-gradient(to left, #0d0d0d4d 85%, #ffffff00 50%);
-  padding-bottom: 100px;
-  margin: 200px 0;
-  padding-left: 150px;
+#section-2 {
+  margin: 100px 0;
 }
 
-.section-2 h2 {
-  padding-right: 50px;
+
+#section-2 h3 {
+  font-size: 1.7rem;
 }
 
 .infograph-area {
@@ -153,10 +162,11 @@ a:hover {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  padding-right: 100px;
 }
 
 .pie-chart-img {
-  /* width: 500px; */
+  width: 500px;
 }
 
 .legend {
@@ -164,9 +174,9 @@ a:hover {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  margin-left: 75px;
+  margin-right: 75px;
   justify-content: center;
-  padding-right: 25px;
+  
 }
 
 .legend-halfcircle {
@@ -174,65 +184,40 @@ a:hover {
   margin-right: 20px;
 }
 
+
 /* content section 3 */
-.section-3 {
+#section-3 {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-}
-
-.section-3-title {
-  width: 70%;
+  padding-right: 700px;
   padding-left: 150px;
-}
-
-.section-3-content {
-  padding-left: 500px;
-  padding-right: 150px;
+  
 }
 
 /* CTA content */
 
-.section-4 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 200px;
-  /* padding-left: 50px; */
-  background-image: url('./images/pattern1.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  /* background-size: 50%; */
+#section-4 {
+  margin-left: auto; 
+  padding-right: 100px;
+  padding-top: 400px;
+  padding-bottom: 100px;
 }
 
-.section-4-content {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  padding-top: 300px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.span {
+#section-4 p {
   color: var(--white);
-  font-family: commuters-sans, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.5em;
-  line-height: 1.7;
-  padding-left: 40px;
-  letter-spacing: 3px;
+  text-align: right;
+  line-height: .5;
 }
+
+
+
+
 
 /* Breakpoints */
 
 @media (max-width: 1420px) {
-  main {
-    background-size: 50%;
-  }
+
   .section-1-title {
     width: 80%;
   }
@@ -251,28 +236,18 @@ a:hover {
     padding-right: 150px;
   }
 
-  /* background image for CTA */
-  .section-4 {
-    background-size: 50%;
-  }
+
 }
 
 @media (max-width: 1200px) {
   .infograph-area {
     padding-left: 50px;
   }
-  .section-2 {
-    /* makes the background color go full bleed both sides */
-    background: linear-gradient(to left, #0d0d0d4d 100%, #ffffff00 50%);
-    padding-bottom: 100px;
-    margin: 200px 0;
-  }
+  
+
 }
 
 @media (max-width: 1000px) {
-  main {
-    background-size: 60%;
-  }
 
   .header {
     margin-top: 300px;
@@ -370,9 +345,10 @@ a:hover {
     font-size: 2em;
   }
 
-  h4 {
-    font-size: 1.3em;
-  }
+  /* h4 {
+    font-size: 3em;
+    color: var(--white);
+  } */
 
   .span {
     font-size: 0.5em;
