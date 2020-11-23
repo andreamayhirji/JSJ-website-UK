@@ -130,12 +130,16 @@ background-color: var(--primary);
 }
 
 /* content section 1 */
+.grid-wrapper-1 {
+  display: grid;
+  grid-template-areas: 
+    ". section-1";
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 100px;
+}
+
 #section-1 {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  padding-left: 900px;
-  padding-right: 150px;
+  grid-area: section-1; 
 }
 
 
@@ -164,9 +168,9 @@ background-color: var(--primary);
   align-items: center;
 }
 
-.pie-chart-img {
+/* .pie-chart-img {
   width: 500px;
-}
+} */
 
 .legend {
   display: flex;
@@ -175,7 +179,6 @@ background-color: var(--primary);
   flex: 1;
   margin-right: 75px;
   justify-content: center;
-  
 }
 
 .legend-halfcircle {
@@ -185,12 +188,21 @@ background-color: var(--primary);
 
 
 /* content section 3 */
+.grid-wrapper-3 {
+  display: grid;
+  grid-template-areas: 
+    "section-3 .";
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 100px;
+}
+
 #section-3 {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   flex-basis: 100%;
   padding-right: 750px;
-  padding-left: 200px;
+  padding-left: 200px; */
+  grid-area: section-3;
   
 }
 
@@ -220,6 +232,19 @@ background-color: var(--primary);
 
 /* Breakpoints */
 
+
+@media (max-width: 1000px) {
+ 
+  .grid-wrapper-3 {
+    display: grid;
+    grid-template-areas: 
+      "section-3";
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 100px;
+  }
+}
+
+/* 
 @media (max-width: 1420px) {
 
   .section-1-title {
@@ -270,10 +295,7 @@ background-color: var(--primary);
     width: 100%;
     padding-left: 100px;
   }
-  /* background image for CTA */
-  .section-4 {
-    background-size: 70%;
-  }
+  
 }
 
 
@@ -349,11 +371,6 @@ background-color: var(--primary);
     font-size: 2em;
   }
 
-  /* h4 {
-    font-size: 3em;
-    color: var(--white);
-  } */
-
   .span {
     font-size: 0.5em;
   }
@@ -381,4 +398,4 @@ background-color: var(--primary);
   .section-4 {
     margin-top: 100px;
   }
-}
+} */
