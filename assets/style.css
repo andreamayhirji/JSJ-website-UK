@@ -59,8 +59,8 @@ p {
   font-family: commuters-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.7;
+  font-size: 1.6em;
+  line-height: 1.8;
 }
 
 h2 {
@@ -121,7 +121,7 @@ background-color: var(--primary);
 /* logo header section */
 #header {
   text-align: center;
-  padding: 100px 0 400px 0;
+  padding: 100px 0 600px 0;
 }
 
 .logo {
@@ -134,14 +134,14 @@ background-color: var(--primary);
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  padding-left: 700px;
+  padding-left: 900px;
   padding-right: 150px;
 }
 
 
 /* infograph content section 2 */
 #section-2 {
-  margin: 100px 0;
+  margin: 100px 200px;
 }
 
 
@@ -151,18 +151,17 @@ background-color: var(--primary);
 
 .infograph-area {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   width: 100%;
-  padding-left: 200px;
 }
 
 .pie-chart {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
-  padding-right: 100px;
+  margin-top: 50px;
+  align-items: center;
 }
 
 .pie-chart-img {
@@ -190,8 +189,8 @@ background-color: var(--primary);
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  padding-right: 700px;
-  padding-left: 150px;
+  padding-right: 750px;
+  padding-left: 200px;
   
 }
 
@@ -200,14 +199,19 @@ background-color: var(--primary);
 #section-4 {
   margin-left: auto; 
   padding-right: 100px;
-  padding-top: 400px;
+  padding-top: 600px;
   padding-bottom: 100px;
+}
+
+#section-4 h4 {
+  text-align: right;
 }
 
 #section-4 p {
   color: var(--white);
   text-align: right;
   line-height: .5;
+  font-size: 2em;
 }
 
 
