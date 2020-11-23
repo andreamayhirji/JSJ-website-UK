@@ -151,7 +151,7 @@ background-color: var(--primary);
 
 .infograph-area {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -161,7 +161,7 @@ background-color: var(--primary);
   flex-direction: column;
   flex: 1;
   margin-top: 50px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .pie-chart-img {
@@ -191,7 +191,6 @@ background-color: var(--primary);
   flex-basis: 100%;
   padding-right: 750px;
   padding-left: 200px;
-  
 }
 
 /* CTA content */
@@ -220,35 +219,76 @@ background-color: var(--primary);
 
 /* Breakpoints */
 
-@media (max-width: 1420px) {
+@media (max-width: 1590px) {
 
-  .section-1-title {
-    width: 80%;
+  #header {
+    padding: 100px 0 500px 0
   }
 
-  .section-1-content {
-    padding-left: 300px;
-    padding-right: 150px;
-  }
-
-  .section-3-title {
-    width: 90%;
-  }
-
-  .section-3-content {
-    padding-left: 300px;
-    padding-right: 150px;
+  #section-1 {
+    padding-left: 800px;
+    padding-right: 100px;
   }
 
 
 }
 
+
+@media (max-width: 1350px) {
+
+  #header {
+    padding: 100px 0 400px 0
+  }
+
+  #section-1 {
+    padding-left: 700px;
+  }
+
+  #section-2 {
+    margin: 100px 100px;
+  }
+
+}
+
 @media (max-width: 1200px) {
-  .infograph-area {
-    padding-left: 50px;
+  
+  /* 1200px is the breakpoint for changing the size of the hero image and logo */
+  .logo {
+    width: 600px;
+  }
+
+  #header {
+    padding: 100px 0 300px 0
+  }
+
+  #section-1 {
+    padding-left: 600px;
   }
   
 
+}
+
+@media (max-width: 1040px) {
+#section-2 {
+  margin: 100px;
+  text-align: center;
+
+}
+
+.infograph-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.legend {
+  margin-right: 0;
+}
+.pie-chart {
+  /* flex: none; */
+}
 }
 
 @media (max-width: 1000px) {
@@ -262,9 +302,9 @@ background-color: var(--primary);
     width: 500px;
   }
 
-  .section-2 {
-    padding-bottom: 50px;
-  }
+
+
+
 
   .section-3-title {
     width: 100%;
