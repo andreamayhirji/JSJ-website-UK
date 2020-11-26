@@ -44,9 +44,7 @@ h6 {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
+
   height: 100%;
   width: 100%;
   background: url('./images/bg-bottom.png') bottom right;
@@ -129,9 +127,10 @@ a:hover {
     "header header" 
     ". section-1"
     "blue-box-right blue-box-right"
-    "section-2 section-2"
+    "legend pie-chart"
     "blue-box-left blue-box-left"
-    "section-3 .";
+    "section-3 ."
+    "section-4 section-4";
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -159,48 +158,30 @@ a:hover {
 
 
 /* infograph content section 2 */
-#section-2 {
-  margin: 100px 200px;
-  grid-area: section-2;
-}
-
-
-#section-2 h3 {
-  font-size: 1.7rem;
-}
-
-.infograph-area {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
 
 .pie-chart {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin-top: 50px;
+  padding: 150px 50px 100px 25px;
   align-items: center;
+  grid-area: pie-chart;
 }
 
 .pie-chart-img {
-  width: 500px;
+  width: 100%;
 }
 
 .legend {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  
-  margin-right: 75px;
+  padding: 100px 25px 100px 50px;
   justify-content: center;
+  grid-area: legend;
 }
 
 .legend-halfcircle {
   width: 30px;
   margin-right: 20px;
+}
+
+.legend h3 {
+  font-size: 1.7rem;
 }
 
 
@@ -218,6 +199,7 @@ a:hover {
   padding-right: 100px;
   padding-top: 400px;
   padding-bottom: 100px;
+  grid-area: section-4
 }
 
 #section-4 h4 {
@@ -256,23 +238,37 @@ a:hover {
 }
 
 @media (max-width: 1100px) {
-
-
-  body {
-    background-image: url(/assets/images/bg_small.png);
-  }
-}
-
-
-@media (max-width: 900px) {
   .logo {
     width: 500px;
   }
 
   #header {
-    padding: 50px 0 300px 0;
-
+    padding: 75px 0 325px 0;
   }
+
+  
+}
+
+
+@media (max-width: 900px) {
+
+  body {
+    background-image: none;
+  }
+
+  #header {
+    padding: 100px 50px 100px 50px;
+    background-image: url(/assets/images/bg_small.png);
+    height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
 
   .grid-wrapper {
     display: grid;
@@ -280,21 +276,56 @@ a:hover {
       "header header" 
       "section-1 section-1"
       ". blue-box-right"
-      "section-2 section-2"
+      "legend legend"
+      "pie-chart pie-chart"
       "blue-box-left ."
-      "section-3 section-3";
+      "section-3 section-3"
+      "section-4 section-4";
     grid-template-columns: repeat(2, 1fr);
   }
 
   #section-1 {
-    padding: 0 100px;
+    padding: 100px;
   }
 
   #section-3 {
     padding: 0 100px;
   }
 
- 
+  .pie-chart {
+    padding: 0px 75px;
+    align-items: center;
+    grid-area: pie-chart;
+  }
+  
+  .pie-chart-img {
+    width: 100%;
+  }
+  
+  .legend {
+    padding: 50px 75px;
+    justify-content: center;
+    grid-area: legend;
+  }
+
+  main {
+    background: none;
+    background-repeat: none;
+    background-size: none;
+  }
+
+  #section-4 {
+    margin-left: auto; 
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    background: url('./images/bg-bottom-small.png') bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
 
 
 }
