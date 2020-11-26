@@ -167,7 +167,6 @@ a:hover {
 
 #section-2 h3 {
   font-size: 1.7rem;
-  
 }
 
 .infograph-area {
@@ -257,24 +256,34 @@ a:hover {
 }
 
 @media (max-width: 1100px) {
-  .logo {
-    width: 500px;
+
+
+  body {
+    background-image: url(/assets/images/bg_small.png);
   }
 }
 
 
 @media (max-width: 900px) {
- 
+  .logo {
+    width: 500px;
+  }
+
+  #header {
+    padding: 50px 0 300px 0;
+
+  }
+
   .grid-wrapper {
     display: grid;
     grid-template-areas:
-      "header" 
-      "section-1"
-      "blue-box-right"
-      "section-2"
-      "blue-box-left"
-      "section-3";
-    grid-template-columns: repeat(1, 1fr);
+      "header header" 
+      "section-1 section-1"
+      ". blue-box-right"
+      "section-2 section-2"
+      "blue-box-left ."
+      "section-3 section-3";
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #section-1 {
@@ -284,6 +293,9 @@ a:hover {
   #section-3 {
     padding: 0 100px;
   }
+
+ 
+
 
 }
 
