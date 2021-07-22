@@ -103,6 +103,15 @@ a:hover {
   cursor: alias;
 }
 
+.fine-print {
+  color: var(--primary);
+  font-family: commuters-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
 .blue-box {
 margin: 100px 0;
 width: 200px;
